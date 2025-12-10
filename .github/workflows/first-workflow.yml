@@ -13,7 +13,7 @@ jobs:
       - name: Send Email On Success
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.example.com
+          server_address: smtp.gmail.com
           server_port: ${{ secrets.MAIL_PORT }}
           username: ${{ secrets.MAIL_TO }}
           password: ${{ secrets.MAIL_PASSWORD }}
