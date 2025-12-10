@@ -14,13 +14,12 @@ jobs:
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.example.com
-          server_port: 587
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
+          server_port: ${{ secrets.MAIL_PORT }}
+          username: ${{ secrets.MAIL_TO }}
+          password: ${{ secrets.MAIL_PASSWORD }}
           subject: "Workflow Succeeded"
-          body: "The first workflow has completed successfully."
           to: "nizamuddinnayeem22@gmail.com"
-          from: "Deploy Bot <deploybot@email.com>"
+          from: "Deploy Bot <${{ secrets.MAIL_FROM }}>"
           body: |
             Hello,
 
