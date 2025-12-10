@@ -1,5 +1,4 @@
-name: First CICD Workflow
-
+name: "First CICD Workflow"
 on:
   push:
     branches:
