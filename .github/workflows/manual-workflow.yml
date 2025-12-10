@@ -2,16 +2,16 @@ name: Manual Workflow
 on:
   workflow_dispatch:
 
-  jobs:
-    manual-workflow-cicd:
-      runs-on: ubuntu-latest
+jobs:
+  manual-workflow-cicd:
+    runs-on: ubuntu-latest
 
-      steps:
-        - name: First Step 
-          run: echo "This is the first step of the manual workflow."
+    steps:
+      - name: First Step 
+        run: echo "This is the first step of the manual workflow."
 
-        - name: Second Step 
-          run: echo "This is the second step of the manual workflow."
+      - name: Second Step 
+        run: echo "This is the second step of the manual workflow."
 
-        - name: Third Step 
-          run: echo "This is the third step of the manual workflow."
+      - name: Third Step 
+        run: echo "This is the third step of the manual workflow."
