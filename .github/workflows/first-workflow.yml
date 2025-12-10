@@ -1,18 +1,11 @@
-name: "First CICD Workflow"
-on:
-  push:
-    branches:
-      -main
-  
+name: First Workflow
+
+on: [push]
+
 jobs:
-  First-Work:
+  first-time-cicd:
     runs-on: ubuntu-latest
-  
+
     steps:
-      - name: First steps
-        run: echo "This is my first CICD workflow"
-      
-      - name: Second steps
-        run: echo "This is my second CICD workflow"
-      - name: Third steps
-        run: echo "This is my third CICD workflow"
+      -name: Checkout repository
+        run:  echo "Checking out the repository..."
