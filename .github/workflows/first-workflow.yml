@@ -5,7 +5,7 @@ on:
       -main
   
 jobs:
-  First_Work:
+  First-Work:
     runs-on: ubuntu-latest
   
     steps:
