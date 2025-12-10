@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Checkout repository
-      run: echo "Checking out the repository..."
+      - name: Checkout repository
+        run: echo "Checking out the repository..."
